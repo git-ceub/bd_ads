@@ -1,1 +1,6 @@
-Aula BD
+Aula BD 
+
+-- COMANDO SELECT
+SELECT 
+FROM
+WHERE
