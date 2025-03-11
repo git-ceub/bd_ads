@@ -1,4 +1,4 @@
-Aula BD 
+Aula BD - Francisco Molina
 
 -- COMANDO SELECT
 SELECT 
