@@ -1,6 +1,36 @@
-Aula BD - Francisco Molina
+-- selecionando todos os registros
+-- da tabela médicos
+SELECT *
+FROM medicos;
 
--- COMANDO SELECT
-SELECT 
-FROM
-WHERE
+SELECT nome, idade
+FROM medicos;
+
+SELECT *
+FROM medicos
+WHERE codm = 3;
+
+-- Exemplo de select com operador AND
+SELECT *
+FROM medicos
+WHERE idade > 30 OR especialidade = 'pediatria';
+
+SELECT *
+FROM medicos
+WHERE nome LIKE 'P%';
+
+SELECT especialidade, count(*) as qtd_medicos
+FROM medicos
+GROUP BY especialidade
+ORDER BY qtd_medicos;
+
+SELECT *
+FROM medicos
+WHERE cidade = 'Florianopolis' 
+	OR cidade = 'Blumenau';
+
+SELECT *
+FROM medicos
+WHERE cidade IN ('Florianopolis', 'Blumenau')
+
+
